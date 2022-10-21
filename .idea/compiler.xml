@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pe_backend" />
+        <module name="pe_interface" />
+        <module name="pe_entity" />
+        <module name="pe_job" />
+        <module name="pe_provider" />
+        <module name="pe_utils" />
+        <module name="pe_mobile" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pe_backend" options="-parameters" />
+      <module name="pe_entity" options="-parameters" />
+      <module name="pe_interface" options="-parameters" />
+      <module name="pe_job" options="-parameters" />
+      <module name="pe_mobile" options="-parameters" />
+      <module name="pe_provider" options="-parameters" />
+      <module name="pe_utils" options="-parameters" />
+    </option>
+  </component>
+</project>

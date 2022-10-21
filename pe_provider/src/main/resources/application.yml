@@ -1,0 +1,35 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: pe_provider
+  # dubbo
+
+  dubbo:
+    application:
+      name: pe_provider
+    protocol:
+      name: dubbo
+      port: 20881
+    registry:
+      address: zookeeper://192.168.141.129:2181
+    scan:
+      base-packages: com.blackred.service.impl
+  # 数据源 ~~~~
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/health
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  redis:
+    host: 192.168.141.129
+    port: 6379
+# mybatis plus ~~~~
+mybatis-plus:
+  mapper-locations: classpath:/mappers/*Mapper.xml
+  type-aliases-package: com.blackred.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

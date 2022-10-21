@@ -1,0 +1,17 @@
+server:
+  port: 9013
+
+spring:
+  application:
+    name: pe_mobile
+
+  dubbo:
+    application:
+      name: pe_mobile
+    protocol:
+      name: dubbo
+      port: 20883
+    registry:
+      address: zookeeper://192.168.141.129:2181
+    scan:
+      base-packages: com.blackred.controller

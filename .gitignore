@@ -1,0 +1,8 @@
+# 项目排除路径
+/pe_backend/target/
+/pe_entity/target/
+/pe_interface/target/
+/pe_job/target/
+/pe_mobile/target/
+/pe_provider/target/
+/pe_utils/target/

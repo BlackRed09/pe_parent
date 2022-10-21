@@ -1,0 +1,21 @@
+server:
+  port: 9012
+
+spring:
+  application:
+    name: pe_backend
+  dubbo:
+    application:
+      name: pe_backend
+    protocol:
+      name: dubbo
+      port: 20882
+    registry:
+      address: zookeeper://192.168.141.129:2181
+    scan:
+      base-packages: com.blackred.controller
+
+  redis:
+    port: 6379
+    host: 192.168.141.129
+
